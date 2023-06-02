@@ -26,7 +26,7 @@ purposes.
 ### Prerequisites
 
 - Java 8 or higher
-- Spring Boot 2.3.0 or higher
+- Spring Boot v3.0.2 or higher
 - OMDB API key (You can get the API key from http://www.omdbapi.com/)
 
 ### Installation
