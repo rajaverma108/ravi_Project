@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
@@ -15,14 +17,13 @@ public class MainController {
     MovieService movieService;
 
     @GetMapping("/")
-    public String homeController() {
-        return "moviedetails";
+    public String controllerHealth() {
+        return "working";
     }
 
-    @GetMapping("/search")
+    @RequestMapping(value ="/search",method = RequestMethod.GET)
     public String getMovieByName(@RequestParam(name = "title") String title, Model model) throws IOException {
         model.addAttribute("movies", movieService.getMovieByName(title));
-
         return "moviedetails";
     }
 }
