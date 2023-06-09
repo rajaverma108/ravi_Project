@@ -18,7 +18,7 @@ public class MainController {
 
     @GetMapping("/")
     public String controllerHealth() {
-        return "working";
+        return "moviedetails";
     }
 
     @RequestMapping(value ="/search",method = RequestMethod.GET)
