@@ -10,11 +10,12 @@ import java.util.stream.Stream;
 
 public class ProgramsWithStreams {
     public static void main(String[] args) {
-          fibonacciSearies();
+               fibonacciSearies();
 //        stringReversal();
 //        separateOddAndEvenNumvers();
 //        sumofAlldigitOfANumber();
 //        frequancyOfletters();
+//        frequancyOfNumbers();
 //        sortingListInReverseOrder();
 //        printMultipleof_5();
 //        margingTwoUnsortedArrayintoOne();
@@ -32,6 +33,13 @@ public class ProgramsWithStreams {
 //        anagram(); //If orginal word is made up by re-arrangement
 
 
+    }
+
+    private static void frequancyOfNumbers() {
+        List<Integer> integerList = Arrays.asList(1, 2, 3, 1, 3, 4);
+        Map<Integer, Long> collect =
+                integerList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println("frequancyOfNumbers : " + collect);
     }
 
     private static void fibonacciSearies() {
