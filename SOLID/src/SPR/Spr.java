@@ -2,6 +2,9 @@ package SPR;
 
 class Spr {
     public static void main(String[] args) throws Exception {
+
+        //SPR-> A class should have one and only one responsibility and reason to change.
+
         Note note = new Note();
         note.addComment("First note");
         note.addComment("Second note");

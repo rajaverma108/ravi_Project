@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Ocp {
     public static void main(String[] args) {
+
+        // A class should be open for Extension.But clossed  for modification.
+
         Product apple = new Product("Apple", Color.RED, Size.SMALL);
         Product tree = new Product("Tree", Color.GREEN, Size.MEDIUM);
         Product house = new Product("House", Color.BLUE, Size.LARGE);
