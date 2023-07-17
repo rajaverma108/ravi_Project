@@ -3,7 +3,7 @@ package LSP;
 public class Lsp {
     public static void main(String[] args) {
 
-        // SubType should be replaceable by their base type.
+        //SubType should be replaceable by their base type.
 
         Rectangle rectangle = RectangleFactory.newRectangle(2, 4);
         Rectangle square = RectangleFactory.newSquare(4);
