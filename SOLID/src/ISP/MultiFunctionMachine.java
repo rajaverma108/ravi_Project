@@ -14,7 +14,6 @@ public class MultiFunctionMachine implements MultiFunctionDevice {
     public void Print(Document d) throws Exception {
         printer.Print(d);
     }
-
     public void Scan(Document d) throws Exception {
         scanner.Scan(d);
     }

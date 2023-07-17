@@ -9,7 +9,6 @@ public class Document {
     void addDocument(String text) {
         documents.add(text);
     }
-
     @Override
     public String toString() {
         return String.join(", ", documents);

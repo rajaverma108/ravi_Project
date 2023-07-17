@@ -2,6 +2,7 @@ package ISP;
 
 public class Isp {
     public static void main(String[] args) throws Exception {
+
         //Many specific interfaces are better than a general interface.
 
         Document document = new Document();
