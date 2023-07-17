@@ -2,7 +2,6 @@ package DIP;
 
 class Dip {
     public static void main(String[] args) {
-
         // we must depend on abstraction and not on concreate classes,
         // High-Level module should not depend upon low -level modeule ,both should depend on abstraction.
 
