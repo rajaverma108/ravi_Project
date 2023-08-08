@@ -11,8 +11,8 @@
     <groupId>com.jwt</groupId>
     <artifactId>Demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Jwt_Demo</name>
-    <description>Jwt_Demo</description>
+    <name>Basic_Apis</name>
+    <description>BasicApis</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
