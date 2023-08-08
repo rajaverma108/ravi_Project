@@ -2,6 +2,7 @@ package com.user.reg.sys.controller;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.user.reg.sys.model.user.entities.Address;
 import com.user.reg.sys.model.user.entities.UserData;
 import org.junit.Before;
 import org.junit.Test;
@@ -52,21 +53,25 @@ public class UserDataControllerTest {
 
     @Test
     public void createAllUser() throws Exception {
-
-
+        Address address = new Address();
+        address.setPincode(12);
+        address.setAddressline1("test");
+        address.setAddressline2("test");
+        address.setCity("test");
+        address.setState("mp");
         UserData userData = new UserData();
         userData.setCid("21");
         userData.setFirstname("test");
         userData.setLastname("test");
-        userData.setAddress("test");
+        userData.setAddress(address);
         userData.setDateofbirth("10/08/1997");
         userData.setUid(121);
         userData.setRecordCreationDate(Mockito.mock(Timestamp.class));
         userData.setLastModified(Mockito.mock(Timestamp.class));
-
+        address.setUserData(userData);
         String jsonReq = objectMapper.writeValueAsString(userData);
 
-       mockMvc.perform(post("/users1").content(jsonReq).contentType(MediaType.APPLICATION_JSON_VALUE).
+        mockMvc.perform(post("/users1").content(jsonReq).contentType(MediaType.APPLICATION_JSON_VALUE).
                         accept(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk());
 

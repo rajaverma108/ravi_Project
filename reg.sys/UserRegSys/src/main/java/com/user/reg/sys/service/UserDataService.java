@@ -1,6 +1,5 @@
 package com.user.reg.sys.service;
 
-import com.sun.security.auth.UserPrincipal;
 import com.user.reg.sys.model.user.entities.UserData;
 import com.user.reg.sys.model.user.userrepo.UserDataRepo;
 import com.user.reg.sys.utility.ExceptionHandling.MyCustomException;

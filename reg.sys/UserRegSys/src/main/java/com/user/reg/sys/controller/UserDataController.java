@@ -47,7 +47,7 @@ public class UserDataController {
     @PutMapping("/update/{cid}")
     public ResponseEntity<String> updateUserData(@RequestBody UserData userData,@PathVariable("cid") String cid) throws MyCustomException {
         String status = userDataService.updateUserData(userData,cid);
-        if (status.equalsIgnoreCase("update")) {
+        if (status.equalsIgnoreCase("updated")) {
             return new ResponseEntity<>(userData.getCid() + " record updated ", HttpStatus.OK);
         } else if (status.equalsIgnoreCase("not present")) {
             return new ResponseEntity<>(userData.getCid() + " user cid is not present in record ", HttpStatus.NO_CONTENT);
