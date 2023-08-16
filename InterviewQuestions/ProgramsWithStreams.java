@@ -10,8 +10,9 @@ import java.util.stream.Stream;
 
 public class ProgramsWithStreams {
     public static void main(String[] args) {
-               fibonacciSearies();
+//          fibonacciSearies();
 //        stringReversal();
+//        comparingTwoArraysOfString();
 //        separateOddAndEvenNumvers();
 //        sumofAlldigitOfANumber();
 //        frequancyOfletters();
@@ -33,6 +34,13 @@ public class ProgramsWithStreams {
 //        anagram(); //If orginal word is made up by re-arrangement
 
 
+    }
+
+    private static void comparingTwoArraysOfString() {
+        String[] a1 = {"one", "two", "three"};
+        String[] a2 = {"three", "one", "two",};
+        boolean result = Arrays.stream(a1).unordered().allMatch(s -> Arrays.stream(a2).anyMatch(s::equals));
+        System.out.println(result);
     }
 
     private static void frequancyOfNumbers() {
