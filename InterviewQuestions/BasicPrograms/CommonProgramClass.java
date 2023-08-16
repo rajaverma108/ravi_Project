@@ -103,6 +103,10 @@ public class CommonProgramClass {
         }
         System.out.println(map);
     }
+
+    public static void printingValueWithoutUsingPrintln() {
+        if (System.out.printf("printing Value Without Using Println") ==null);
+    }
 }
 
 
