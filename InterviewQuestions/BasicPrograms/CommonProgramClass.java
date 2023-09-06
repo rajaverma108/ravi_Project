@@ -105,7 +105,15 @@ public class CommonProgramClass {
     }
 
     public static void printingValueWithoutUsingPrintln() {
-        if (System.out.printf("printing Value Without Using Println") ==null);
+        if (System.out.printf("printing Value Without Using Println") == null) ;
+    }
+
+    public static void printingValueWithoutUsingAnyLoop(int i) {
+        if (i <= 10) {
+            System.out.println(i);
+            i++;
+            printingValueWithoutUsingAnyLoop(i);
+        }
     }
 }
 

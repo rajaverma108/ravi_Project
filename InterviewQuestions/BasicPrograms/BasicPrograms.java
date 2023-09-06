@@ -12,6 +12,7 @@ public class BasicPrograms {
 //        CommonProgramClass.generateRandomNumber();
 //        CommonProgramClass.performingGarbageCollection();
 //        CommonProgramClass.frequancyOfletters();
-        CommonProgramClass.printingValueWithoutUsingPrintln();
+//        CommonProgramClass.printingValueWithoutUsingPrintln();
+        CommonProgramClass.printingValueWithoutUsingAnyLoop(1);
     }
 }
