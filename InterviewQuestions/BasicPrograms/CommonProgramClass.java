@@ -139,15 +139,24 @@ public class CommonProgramClass {
         char[] arr = str.toLowerCase().toCharArray();
         Map<Character, Integer> map = new HashMap<>();
         for (char ch : arr) {
-           if (map.containsKey(ch)){
-               map.put(ch, map.get(ch)+1);
-           }
-           else {
-               map.put(ch,1);
-           }
+            if (map.containsKey(ch)) {
+                map.put(ch, map.get(ch) + 1);
+            } else {
+                map.put(ch, 1);
+            }
         }
         System.out.println(map);
 
+    }
+
+    public static void swapingNumbersWithoutUsing3rdVeriable() {
+        int x = 4;
+        int y = 5;
+        x=x+y;
+        y=x-y;
+        x=x-y;
+        System.out.println("value of x = "+x);
+        System.out.println("value of y = "+y);
     }
 }
 

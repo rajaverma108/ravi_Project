@@ -1,7 +1,5 @@
 package InterviewQuestions.BasicPrograms;
 
-import static InterviewQuestions.BasicPrograms.CommonProgramClass.*;
-
 public class BasicPrograms {
     public static void main(String[] args) {
 //        System.out.println("factorial Result : "+ findingFactorialUsingRecursion(null));
@@ -15,6 +13,8 @@ public class BasicPrograms {
 //        CommonProgramClass.printingValueWithoutUsingPrintln();
 //        CommonProgramClass.printingValueWithoutUsingAnyLoop(1);
 //        CommonProgramClass.checkwhetherNumberISPrimeOrNOt(2);
-        CommonProgramClass.frequancyOfletters();
+//        CommonProgramClass.frequancyOfletters();
+        CommonProgramClass.swapingNumbersWithoutUsing3rdVeriable();
+
     }
 }
