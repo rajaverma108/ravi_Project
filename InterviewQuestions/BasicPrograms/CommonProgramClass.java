@@ -90,7 +90,7 @@ public class CommonProgramClass {
         System.out.println("Free Memory in JVM after Garbage Collection : " + runtime.freeMemory());
     }
 
-    public static void frequancyOfletters() {
+    public static void frequancyOfNumbers() {
         List<Integer> integers = Arrays.asList(1, 2, 3, 4, 2, 4, 5);
         Map<Integer, Boolean> map = new HashMap<>();
         for (Integer a : integers
@@ -114,6 +114,40 @@ public class CommonProgramClass {
             i++;
             printingValueWithoutUsingAnyLoop(i);
         }
+    }
+
+    public static void checkwhetherNumberISPrimeOrNOt(int i) {
+        int temp = 0;
+        if (i <= 1 || i == 0) {
+            System.out.println("not a prime number");
+        }
+        for (int j = 2; j <= i / 2; j++) {
+            if (i % j == 0) {
+                System.out.println("not a prime Number");
+                temp = 1;
+                break;
+            }
+        }
+        if (temp == 0) {
+            System.out.println("is a prime number");
+        }
+
+    }
+
+    public static void frequancyOfletters() {
+        String str = "Google";
+        char[] arr = str.toLowerCase().toCharArray();
+        Map<Character, Integer> map = new HashMap<>();
+        for (char ch : arr) {
+           if (map.containsKey(ch)){
+               map.put(ch, map.get(ch)+1);
+           }
+           else {
+               map.put(ch,1);
+           }
+        }
+        System.out.println(map);
+
     }
 }
 

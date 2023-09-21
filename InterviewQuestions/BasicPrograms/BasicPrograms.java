@@ -11,8 +11,10 @@ public class BasicPrograms {
 //        CommonProgramClass.floydTriangle(5);
 //        CommonProgramClass.generateRandomNumber();
 //        CommonProgramClass.performingGarbageCollection();
-//        CommonProgramClass.frequancyOfletters();
+//        CommonProgramClass.frequancyOfNumbers();
 //        CommonProgramClass.printingValueWithoutUsingPrintln();
-        CommonProgramClass.printingValueWithoutUsingAnyLoop(1);
+//        CommonProgramClass.printingValueWithoutUsingAnyLoop(1);
+//        CommonProgramClass.checkwhetherNumberISPrimeOrNOt(2);
+        CommonProgramClass.frequancyOfletters();
     }
 }

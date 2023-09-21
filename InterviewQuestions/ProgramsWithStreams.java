@@ -13,7 +13,7 @@ public class ProgramsWithStreams {
 //          fibonacciSearies();
 //        stringReversal();
 //        comparingTwoArraysOfString();
-//        separateOddAndEvenNumvers();
+//        separateOddAndEvenNumbers();
 //        sumofAlldigitOfANumber();
 //        frequancyOfletters();
 //        frequancyOfNumbers();
@@ -32,7 +32,6 @@ public class ProgramsWithStreams {
 //        findingStringWhichStartWithNumber();
 //        joinListOfStringsWithPrefixAndSuffixAndDelimiter();
 //        anagram(); //If orginal word is made up by re-arrangement
-
 
     }
 
