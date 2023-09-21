@@ -14,7 +14,7 @@ public class BasicPrograms {
 //        CommonProgramClass.printingValueWithoutUsingAnyLoop(1);
 //        CommonProgramClass.checkwhetherNumberISPrimeOrNOt(2);
 //        CommonProgramClass.frequancyOfletters();
-        CommonProgramClass.swapingNumbersWithoutUsing3rdVeriable();
+//        CommonProgramClass.swapingNumbersWithoutUsing3rdVeriable();
 
     }
 }
