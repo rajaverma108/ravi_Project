@@ -14,7 +14,8 @@ public class ProgramsWithStreams {
 //        stringReversal();
 //        comparingTwoArraysOfString();
 //        separateOddAndEvenNumbers();
-//        sumofAlldigitOfANumber();
+        sumofAlldigitOfANumber();
+        filterOutTheNarcissisticNUmbers(); // {Ex- 153=( 1*1*1)+(5*5*5)+(3*3*3) again give original number}
 //        frequancyOfletters();
 //        frequancyOfNumbers();
 //        sortingListInReverseOrder();
@@ -34,6 +35,31 @@ public class ProgramsWithStreams {
 //        anagram(); //If orginal word is made up by re-arrangement
 
     }
+
+    private static void filterOutTheNarcissisticNUmbers() {
+        List<String> listOfIntegers = new ArrayList<>(); // for input
+//        List<Integer> integerList = IntStream.rangeClosed(301, 400).boxed().collect(Collectors.toList());
+        List<String> strings = Arrays.asList("301", "302", "303", "304", "305", "306", "307", "308", "309", "310"
+                , "311", "312", "313", "314", "315", "316", "317", "318", "319", "320"
+                , "321", "322", "323", "324", "325", "326", "327", "328", "329", "330"
+                , "331", "332", "333", "334", "335", "336", "337", "338", "339", "340"
+                , "341", "342", "343", "344", "345", "346", "347", "348", "349", "350"
+                , "351", "352", "353", "354", "355", "356", "357", "358", "359", "360"
+                , "361", "362", "363", "364", "365", "366", "367", "368", "369", "370"
+                , "371", "372", "373", "374", "375", "376", "377", "378", "379", "380"
+                , "381", "382", "383", "384", "385", "386", "387", "388", "389", "390"
+                , "391", "392", "393", "394", "395", "396", "397", "398", "399", "400");
+        List<String> collect = strings.stream().filter(s -> {
+            if (s != null) {
+                Stream.of(String.valueOf(s).split("")).collect(Collectors.summingInt(Integer::parseInt));
+                return true;
+            }
+            return false;
+        }).collect(Collectors.toList());
+        System.out.println(collect);
+
+    }
+
 
     private static void comparingTwoArraysOfString() {
         String[] a1 = {"one", "two", "three"};
