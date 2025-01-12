@@ -3,7 +3,7 @@ package InterviewQuestions.AWT;
 import java.awt.*;
 
 public class AddingTextArea {
-    AddingTextArea() {
+    private static void AddingTextArea() {
         Frame frame = new Frame();
         TextArea area = new TextArea("Welcome To Java");
         area.setBounds(10, 30, 400, 400);
@@ -14,6 +14,6 @@ public class AddingTextArea {
     }
 
     public static void main(String[] args) {
-        new AddingTextArea();
+        AddingTextArea();
     }
 }
