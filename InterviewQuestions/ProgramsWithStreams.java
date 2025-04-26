@@ -22,13 +22,13 @@ public class ProgramsWithStreams {
 //        printMultipleof_5();
 //        margingTwoUnsortedArrayintoOne();
 //        findingMaxandMinFromList();
-        findingSecondMaxandMinFromList();
+//        findingSecondMaxandMinFromList();
 //        ReverseAnIntegerArray();
 //        palindromeWithStream();
 //        lastElementOfAnArray();
 //        ageOfPersonInYears();
 //        frequancyOfEachElementInAnArray();
-//        secondLargestNumberInAnArray();
+        secondLargestNumberInAnArray();
 //        commonElementsBWTwoArray();
 //        findingDuplicateElementFromAnArray();
 //        findingStringWhichStartWithNumber();
@@ -108,7 +108,7 @@ public class ProgramsWithStreams {
 
     private static void secondLargestNumberInAnArray() {
         List<Integer> listOfIntegers = Arrays.asList(1, 2, 3, 4, 5, 1);
-        Integer integer = listOfIntegers.stream().sorted(Comparator.reverseOrder()).findFirst().get();
+        Integer integer = listOfIntegers.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).limit(1).findFirst().get();
         System.out.println(integer);
     }
 
