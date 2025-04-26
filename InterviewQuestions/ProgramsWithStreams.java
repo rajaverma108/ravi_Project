@@ -14,14 +14,15 @@ public class ProgramsWithStreams {
 //        stringReversal();
 //        comparingTwoArraysOfString();
 //        separateOddAndEvenNumbers();
-        sumofAlldigitOfANumber();
-        filterOutTheNarcissisticNUmbers(); // {Ex- 153=( 1*1*1)+(5*5*5)+(3*3*3) again give original number}
+//        sumofAlldigitOfANumber();
+//        filterOutTheNarcissisticNUmbers(); // {Ex- 153=( 1*1*1)+(5*5*5)+(3*3*3) again give original number}
 //        frequancyOfletters();
 //        frequancyOfNumbers();
 //        sortingListInReverseOrder();
 //        printMultipleof_5();
 //        margingTwoUnsortedArrayintoOne();
 //        findingMaxandMinFromList();
+        findingSecondMaxandMinFromList();
 //        ReverseAnIntegerArray();
 //        palindromeWithStream();
 //        lastElementOfAnArray();
@@ -175,6 +176,17 @@ public class ProgramsWithStreams {
         List<Integer> integers = Arrays.asList(2, 2, 3, 4, 5);
         Integer maxinteger = integers.stream().max(Comparator.naturalOrder()).get();
         Integer mininteger = integers.stream().min(Comparator.naturalOrder()).get();
+        System.out.println(maxinteger);
+        System.out.println(mininteger);
+        // Optional<Integer> collect = integers.stream().filter(Integer::max).collect(Collectors.toList());
+        // System.out.println(collect.get());
+    }
+
+    private static void findingSecondMaxandMinFromList() {
+        List<Integer> integers = Arrays.asList(2, 2, 3, 4, 5);
+
+        Integer maxinteger = integers.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).limit(1).findFirst().get();
+        Integer mininteger = integers.stream().distinct().sorted().skip(1).limit(1).findFirst().get();
         System.out.println(maxinteger);
         System.out.println(mininteger);
         // Optional<Integer> collect = integers.stream().filter(Integer::max).collect(Collectors.toList());
