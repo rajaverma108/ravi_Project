@@ -157,6 +157,14 @@ public class CommonProgramClass {
         x=x-y;
         System.out.println("value of x = "+x);
         System.out.println("value of y = "+y);
+    }    public static void swapingNumbersWithoutUsing3rdVeriableByBitWiseOperator() {
+        int x = 4;
+        int y = 5;
+        x=x^y;
+        y=x^y;
+        x=x^y;
+        System.out.println("value of x is changed = "+x);
+        System.out.println("value of y is changed = "+y);
     }
 }
 

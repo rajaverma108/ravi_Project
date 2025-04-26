@@ -15,6 +15,7 @@ public class BasicPrograms {
 //        CommonProgramClass.checkwhetherNumberISPrimeOrNOt(2);
 //        CommonProgramClass.frequancyOfletters();
 //        CommonProgramClass.swapingNumbersWithoutUsing3rdVeriable();
+        CommonProgramClass.swapingNumbersWithoutUsing3rdVeriableByBitWiseOperator();
 
     }
 }
